@@ -1,21 +1,21 @@
 import "./Player.css"
 
-const Player = ({ player }) => {
+const Player = ({ name, team, nationality, jerseyNumber, age, imageUrl }) => {
   return (
     <div>
-        <article className="player-card">
+        <article className="player-card" style={{ width: '300px', minHeight: '460px' }}>
       <img
         className="player-image"
-        src={player.imageUrl}
-        alt={player.name}
+        src={imageUrl}
+        alt={name}
       />
 
-      <h2>{player.name}</h2>
+      <h2>{name}</h2>
 
-      <p>{player.team}</p>
-      <p>{player.nationality}</p>
-      <p>Maillot : {player.jerseyNumber}</p>
-      <p>Âge : {player.age}</p>
+      <p>{team}</p>
+      <p>{nationality}</p>
+      <p>Maillot : {jerseyNumber}</p>
+      <p>Âge : {age}</p>
     </article>
     </div>
   )
