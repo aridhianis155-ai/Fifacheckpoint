@@ -1,17 +1,15 @@
 
 import './App.css'
-import PlayerList from './components/PlayerList'
+import PlayerList from './components/PlayerList.jsx'
 
 function App() {
-  
-
   return (
-    <>
-    <h1 style={{ margin: '24px 0 0', color: '#d6a83f', textAlign: 'center', fontSize: '2.5rem' }}>
-      Joueurs de football
-    </h1>
-     <PlayerList />
-    </>
+    <main className="min-h-screen px-4 py-8 text-white">
+      <h1 className="mb-8 text-center text-4xl font-black tracking-wide text-amber-400 md:text-5xl">
+        Joueurs de football
+      </h1>
+      <PlayerList />
+    </main>
   )
 }
 
